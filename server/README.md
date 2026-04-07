@@ -18,14 +18,14 @@ To run the server, follow these steps:
 
 2. Install project dependencies:
 
-   ```bash
-   bun install
-   ```
+    ```bash
+    bun install
+    ```
 
 3. Start the server:
 
-   ```bash
-   bun run server.ts
-   ```
+    ```bash
+    bun run server.ts
+    ```
 
 - The server will start running on <http://localhost:${PORT}> by default. You can modify the `PORT` .env variable to change the port in `server.ts` as needed.

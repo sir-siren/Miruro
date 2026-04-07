@@ -54,8 +54,8 @@ Built using **React** and **Vite**, Miruro offers a cutting-edge, minimalist des
 ### Watch Page
 
 - **Player**
-  - Autoplay next episode
-  - Skip op/ed button
+    - Autoplay next episode
+    - Skip op/ed button
 
 </details>
 

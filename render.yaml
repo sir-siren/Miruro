@@ -1,0 +1,21 @@
+services:
+    - type: web
+      name: kirobox-backend
+      env: node
+      region: oregon
+      plan: free
+      buildCommand: npm install
+      startCommand: node server.js
+      healthCheckPath: /api/home
+      envVars:
+          - key: NODE_ENV
+            value: production
+          - key: PORT
+            value: 5000
+          - key: MONGO_URI
+            sync: false
+          - key: JWT_SECRET
+            generateValue: true
+          - key: NODE_VERSION
+            value: 18.17.0
+      autoDeploy: true
