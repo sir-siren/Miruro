@@ -7,11 +7,12 @@ const jwt = require("jsonwebtoken");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const PASSWORD = process.env.DB_PASSWORD || "XaneKath1";
 const JWT_SECRET =
     process.env.JWT_SECRET || "super_secret_key_change_this_in_production";
 const MONGO_URI =
     process.env.MONGO_URI ||
-    "mongodb+srv://kiroanime:XaneKath1@kiroanime.mtrpf8o.mongodb.net/?appName=kiroanime";
+    `mongodb+srv://kirobox:${PASSWORD}@cluster0.tmcjgmy.mongodb.net/?appName=Cluster0`;
 
 app.use(cors());
 app.use(express.json());
